@@ -271,3 +271,12 @@ img {
 .lazy-load.loaded {
   opacity: 1;
 }
+
+/* Correção de cor da barra de navegação */
+header {
+  background-color: #ffffff; /* Fundo branco no modo light */
+}
+
+.dark header {
+  background-color: #111827; /* Fundo cinza-escuro no modo dark (equivalente a gray-900) */
+}
