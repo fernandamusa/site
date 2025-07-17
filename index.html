@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Fernanda Musa | Dermatologista Porto Alegre</title>
+    <meta name="description" content="Dra. Fernanda Musa - Dermatologista especialista em dermatologia clínica, estética e cirúrgica em Porto Alegre. Agende sua consulta.">
+    <link rel="canonical" href="https://drafernandamusa.com.br">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Library para animações -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans">
+    <!-- Header/Navegação -->
+    <header class="fixed w-full top-0 z-50 bg-white dark:bg-gray-900 shadow-md transition-colors duration-300">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="MD Dermatologia Logo" class="h-10 w-auto">
+                <span class="ml-3 font-bold text-xl text-primary-dark dark:text-primary-light">MD Dermatologia</span>
+            </div>
+            
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#avaliacoes" class="nav-link">Avaliações</a></li>
+                <li><a href="#atuacao" class="nav-link">Áreas de Atuação</a></li>
+                <li><a href="#clinica" class="nav-link">A Clínica</a></li>
+                <li><a href="#localizacao" class="nav-link">Localização</a></li>
+                <li><a href="#instagram" class="nav-link">Instagram</a></li>
+            </ul>
+            
+            <!-- Botões da direita -->
+            <div class="flex items-center space-x-4">
+                <!-- Toggle Dark Mode -->
+                <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 transition-colors duration-300" aria-label="Alternar modo escuro">
+                    <svg class="w-5 h-5 text-gray-800 dark:text-gray-200" fill="currentColor" viewBox="0 0 20 20">
+                        <path class="dark:hidden" d="M10 2L13.09 8.26L20 9L14 14.74L15.18 21.02L10 17.77L4.82 21.02L6 14.74L0 9L6.91 8.26L10 2Z"></path>
+                        <path class="hidden dark:block" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                </button>
+                
+                <!-- Menu Mobile -->
+                <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Menu mobile">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+            <ul class="py-4 space-y-2">
+                <li><a href="#inicio" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800">Início</a></li>
+                <li><a href="#sobre" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800">Sobre</a></li>
+                <li><a href="#avaliacoes" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800">Avaliações</a></li>
+                <li><a href="#atuacao" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800">Áreas de Atuação</a></li>
+                <li><a href="#clinica" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800">A Clínica</a></li>
+                <li><a href="#localizacao" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800">Localização</a></li>
+                <li><a href="#instagram" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800">Instagram</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5551991933393" target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+       aria-label="Contato via WhatsApp">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.488"/>
+        </svg>
+    </a>
+
+    <!-- Seção Início -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('images/hero-background.png');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        
+        <!-- Conteúdo -->
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Dra. Fernanda Musa<br>
+                <span class="text-primary-light">Dermatologista</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                Especialista em Dermatologia Clínica, Estética e Cirúrgica
+            </p>
+            
+            <!-- CTA Button -->
+            <a href="https://wa.me/5551991933393?text=Olá%20gostaria%20de%20agendar%20uma%20consulta%20com%20Dra.%20Fernanda%20Musa" 
+               target="_blank"
+               class="inline-block bg-primary-dark hover:bg-primary-medium text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 shadow-lg">
+                Agendar Consulta
+            </a>
+            
+            <!-- Informações de Contato -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="font-semibold mb-2">Telefone</h3>
+                    <p>(51) 3377.3333</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="font-semibold mb-2">WhatsApp</h3>
+                    <p>(51) 99193.3393</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="font-semibold mb-2">Endereço</h3>
+                    <p>Praia de Belas, 2124 sala 1002<br>Menino Deus - Porto Alegre/RS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-20 bg-light dark:bg-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary-dark dark:text-primary-light" data-aos="fade-up">
+                Sobre a Doutora
+            </h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Foto -->
+                    <div class="text-center" data-aos="fade-right">
+                        <img src="images/dra-fernanda.jpeg" 
+                             alt="Dra. Fernanda Musa Aguiar - Dermatologista"
+                             class="w-80 h-80 object-cover rounded-lg shadow-lg mx-auto">
+                        
+                        <div class="mt-6">
+                            <h3 class="text-2xl font-bold text-primary-dark dark:text-primary-light">
+                                Dra. Fernanda Musa
+                            </h3>
+                            <p class="text-lg text-gray-600 dark:text-gray-300 mt-2">
+                                Dermatologista<br>
+                                CRM-RS 35968 | RQE 32.550
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Currículo -->
+                    <div data-aos="fade-left">
+                        <div id="curriculo-content" class="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                            <!-- Conteúdo será carregado via JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Avaliações -->
+    <section id="avaliacoes" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary-dark dark:text-primary-light" data-aos="fade-up">
+                Avaliações dos Pacientes
+            </h2>
+            
+            <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                <!-- Elfsight Google Reviews -->
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-b65343b6-bf45-4c94-a143-037fd7c4c822" data-elfsight-app-lazy></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Áreas de Atuação -->
+    <section id="atuacao" class="py-20 bg-light dark:bg-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary-dark dark:text-primary-light" data-aos="fade-up">
+                Áreas de Atuação
+            </h2>
+            
+            <div id="areas-atuacao" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Cards serão gerados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção A Clínica -->
+    <section id="clinica" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary-dark dark:text-primary-light" data-aos="fade-up">
+                A Clínica
+            </h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <!-- Texto descritivo -->
+                <div class="mb-12" data-aos="fade-up">
+                    <div id="clinica-content" class="text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+                        <!-- Conteúdo será carregado via JavaScript -->
+                    </div>
+                </div>
+                
+                <!-- Carrossel de fotos -->
+                <div class="relative" data-aos="fade-up" data-aos-delay="200">
+                    <div id="carousel-container" class="relative overflow-hidden rounded-lg shadow-lg">
+                        <div id="carousel-slides" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Slides serão gerados via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <!-- Controles do carrossel -->
+                    <button id="prev-btn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    
+                    <button id="next-btn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Indicadores -->
+                    <div id="carousel-indicators" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                        <!-- Indicadores serão gerados via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Localização -->
+    <section id="localizacao" class="py-20 bg-light dark:bg-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary-dark dark:text-primary-light" data-aos="fade-up">
+                Localização
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-8" data-aos="fade-up">
+                    <p class="text-lg text-gray-700 dark:text-gray-300">
+                        A clínica possui estacionamento aberto ao público, coberto e pago, com acesso pela Rua Barbedo.
+                    </p>
+                </div>
+                
+                <div class="rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.284427057598!2d-51.229362699999996!3d-30.0573806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951923a913b5f273%3A0x485a50da1a811cb0!2sRoberto%20Lu%C3%ADs%20Rezende!5e0!3m2!1spt-BR!2sbr!4v1752021247629!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Instagram -->
+    <section id="instagram" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary-dark dark:text-primary-light" data-aos="fade-up">
+                Siga no Instagram
+            </h2>
+            
+            <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                <!-- Elfsight Instagram Feed -->
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-95c58292-b29b-4803-954b-8fed9f6b81cc" data-elfsight-app-lazy></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MD Dermatologia Integrada</h3>
+                    <p class="mb-4">Dra. Fernanda Musa</p>
+                    <p class="text-sm opacity-90">CRM-RS 35968 | RQE 32.550</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contato</h3>
+                    <p class="mb-2">📞 (51) 3377.3333</p>
+                    <p class="mb-2">📱 (51) 99193.3393</p>
+                    <p class="text-sm opacity-90">Praia de Belas, 2124 sala 1002<br>Menino Deus - Porto Alegre/RS</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Horário de Atendimento</h3>
+                    <p class="text-sm opacity-90">
+                        Segunda a Sexta: 8h às 18h<br>
+                        Sábado: 8h às 12h
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-sm opacity-75">
+                    © 2025 MD Dermatologia Integrada. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
