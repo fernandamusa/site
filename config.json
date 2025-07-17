@@ -1,0 +1,135 @@
+{
+  "site": {
+    "title": "Dra. Fernanda Musa | Dermatologista Porto Alegre",
+    "description": "Dra. Fernanda Musa - Dermatologista especialista em dermatologia clínica, estética e cirúrgica em Porto Alegre. Agende sua consulta.",
+    "url": "https://drafernandamusa.com.br"
+  },
+  "contato": {
+    "telefone": "(51) 3377.3333",
+    "whatsapp": "(51) 99193.3393",
+    "whatsappLink": "https://wa.me/5551991933393",
+    "endereco": {
+      "logradouro": "Praia de Belas, 2124 sala 1002",
+      "bairro": "Menino Deus",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
+      "cep": "90110-000"
+    }
+  },
+  "medica": {
+    "nome": "Dra. Fernanda Musa",
+    "nomeCompleto": "Fernanda Musa Aguiar",
+    "especialidade": "Dermatologista",
+    "crm": "CRM-RS 35968",
+    "rqe": "RQE 32.550",
+    "foto": "images/dra-fernanda.jpeg"
+  },
+  "sobre": {
+    "curriculo": [
+      "Meu nome é Fernanda Musa Aguiar, sou Médica Dermatologista formada pela Universidade Federal de Ciências da Saúde de Porto Alegre (UFCSPA) em 2011. Ao me graduar na faculdade, senti a necessidade de me aprimorar e ganhar mais conhecimento e prática na Medicina para poder melhor auxiliar meus pacientes, compreender melhor as doenças e ter segurança e prontidão para atender eventuais urgências. Ingressei então em 2012 na Residência em Clínica Médica no Hospital Nossa Senhora da Conceição. Foram dois anos incríveis, de muito crescimento profissional e pessoal.",
+      "Em 2015, iniciei minha especialização em Dermatologia pela Santa Casa de Misericórdia de Porto Alegre. Sempre em busca de mais conhecimento, fiz Fellowship em Dermatologia Geral no Ludwig-Maximilians-Universität em Munique, Alemanha em 2017, e, em 2019, fellowship com enfoque em Unha e Cirurgia de Unha pela Universidade de Bologna, em Bologna, Itália, sob a orientação da Dra. Bianca Maria Piraccini, referência mundial na especialidade.",
+      "Atualmente atuo nos meus consultórios particulares, atendendo crianças, adultos e idosos, nas áreas da dermatologia clínica, estética e cirúrgica."
+    ]
+  },
+  "areasAtuacao": [
+    {
+      "titulo": "Dermatologia Estética",
+      "imagem": "images/dermatologia-estetica.jpg",
+      "descricao": "Tratamentos estéticos avançados para rejuvenescimento e melhoria da aparência da pele.",
+      "servicos": [
+        "Tratamento de Rugas",
+        "Ultrassom Microfocado",
+        "Bioestimulador de Colágeno",
+        "Fios de PDO",
+        "Preenchimento com Ácido Hialurônico",
+        "Luz Intensa Pulsada e Laser: manchas, depilação, rejuvenescimento, vasos, estrias",
+        "Microagulhamento",
+        "Peeling"
+      ]
+    },
+    {
+      "titulo": "Dermatologia Clínica",
+      "imagem": "images/dermatologia-clinica.jpg",
+      "descricao": "Diagnóstico e tratamento de doenças de pele para todas as idades.",
+      "servicos": [
+        "Atendimento de recém-nascidos a idosos",
+        "Doenças de pele em geral:",
+        "Câncer de pele",
+        "Acne",
+        "Rosácea",
+        "Melasma e manchas da pele em geral",
+        "Herpes simples e Herpes Zoster",
+        "Verrugas",
+        "Dermatite Atópica",
+        "Psoríase",
+        "Dermatite Seborreica",
+        "Alopecias e queda de cabelo"
+      ]
+    },
+    {
+      "titulo": "Doenças de Unha",
+      "imagem": "images/doencas-de-unha.jpg",
+      "descricao": "Especialização em diagnóstico e tratamento de patologias ungueais.",
+      "servicos": [
+        "Micoses",
+        "Unhas encravadas",
+        "Tumores ungueais benignos e malignos",
+        "Biópsia de Unha"
+      ]
+    },
+    {
+      "titulo": "Dermatologia Cirúrgica",
+      "imagem": "images/cirurgia.jpg",
+      "descricao": "Procedimentos cirúrgicos dermatológicos com técnicas modernas e seguras.",
+      "servicos": [
+        "Biópsia de pele",
+        "Remoção de tumor de pele benigno e maligno",
+        "Remoção de nevos",
+        "Remoção de cistos sebáceos",
+        "Crioterapia",
+        "Eletrocauterização"
+      ]
+    }
+  ],
+  "clinica": {
+    "nome": "MD Dermatologia Integrada",
+    "descricao": [
+      "A dermatologia é a especialidade médica que se dedica ao diagnóstico e tratamento clínico e cirúrgico das enfermidades que acometem a pele, as mucosas, e aos anexos cutâneos: cabelos, pelos e unhas. O profissional dermatologista está apto a diagnosticar e tratar todas as doenças que afetam a pele.",
+      "A MD Dermatologia Integrada, clínica da Dra. Fernanda Musa e seus sócios, foi criada em outubro de 2012 e surgiu da necessidade do hospital Mãe de Deus de oferecer um atendimento qualificado para pacientes dermatológicos. Teve início como o Serviço de Dermatologia que funcionava dentro do próprio Hospital. Fomos pioneiros como serviço do Sistema de Saúde Mãe de Deus a funcionar fora do hospital.",
+      "Fizemos a mudança da nossa sede em fevereiro de 2024. Temos uma infra-estrutura com três consultórios para atendimentos de consultas eletivas. Nossa equipe possui dermatologistas focados em subespecialidades e uma cirurgiã especializada em cirurgia dermatológica. Contamos ainda com uma técnica de enfermagem, uma auxiliar de limpeza e duas secretárias que complementam a equipe, desta forma oferecemos um atendimento diferenciado que abrange todas as necessidades do paciente.",
+      "Em outubro de 2025 completamos 13 anos de existência com mais de 300.000 atendimentos prestados, agregando valor e confiança aos nossos pacientes."
+    ],
+    "fotos": [
+      "images/clinica-1.jpg",
+      "images/clinica-2.jpg",
+      "images/clinica-3.jpg",
+      "images/clinica-4.jpg",
+      "images/clinica-5.jpg",
+      "images/clinica-6.jpg"
+    ],
+    "estacionamento": "A clínica possui estacionamento aberto ao público, coberto e pago, com acesso pela Rua Barbedo."
+  },
+  "horarios": {
+    "segunda": "8h às 18h",
+    "terca": "8h às 18h",
+    "quarta": "8h às 18h",
+    "quinta": "8h às 18h",
+    "sexta": "8h às 18h",
+    "sabado": "8h às 12h",
+    "domingo": "Fechado"
+  },
+  "redes": {
+    "instagram": "@dra.fernandamusa",
+    "facebook": "MD Dermatologia Integrada"
+  },
+  "seo": {
+    "keywords": [
+      "dermatologista porto alegre",
+      "dermatologia estética",
+      "tratamento de pele",
+      "cirurgia dermatológica",
+      "dra fernanda musa",
+      "consulta dermatologista"
+    ]
+  }
+}
