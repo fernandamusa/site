@@ -296,3 +296,20 @@ header {
 .dark #sobre p, .dark #clinica p, .dark #localizacao p {
     color: #d1d5db; /* Cinza claro (equivalente a dark:text-gray-300) */
 }
+
+/* ===================================================================== */
+/* FORÇAR COR DE FUNDO BRANCA NAS SEÇÕES - SOLUÇÃO FINAL */
+/* Adicione este bloco ao final do seu arquivo styles.css */
+/* ===================================================================== */
+
+#avaliacoes,
+#clinica,
+#instagram {
+  background-color: #ffffff !important; /* Fundo BRANCO no modo claro */
+}
+
+.dark #avaliacoes,
+.dark #clinica,
+.dark #instagram {
+  background-color: #111827 !important; /* Fundo CINZA ESCURO no modo dark */
+}
