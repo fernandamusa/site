@@ -1,0 +1,268 @@
+/* Variáveis CSS Customizadas */
+:root {
+  /* Cores Light Mode */
+  --primary-dark: #e96345;
+  --primary-medium: #e97855;
+  --primary-light: #f0aa6c;
+  --bg-light: #f7f9fb;
+  
+  /* Cores Dark Mode */
+  --primary-dark-dark: #932911;
+  --primary-medium-dark: #942e10;
+  --primary-light-dark: #86460e;
+  --bg-dark: #1b1e1f;
+}
+
+/* Dark mode */
+.dark {
+  --primary-dark: var(--primary-dark-dark);
+  --primary-medium: var(--primary-medium-dark);
+  --primary-light: var(--primary-light-dark);
+  --bg-light: var(--bg-dark);
+}
+
+/* Configuração do Tailwind com variáveis customizadas */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Configurações gerais */
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Classes customizadas usando as variáveis */
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.bg-primary-medium {
+  background-color: var(--primary-medium);
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light);
+}
+
+.bg-light {
+  background-color: var(--bg-light);
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.text-primary-dark {
+  color: var(--primary-dark);
+}
+
+.text-primary-medium {
+  color: var(--primary-medium);
+}
+
+.text-primary-light {
+  color: var(--primary-light);
+}
+
+/* Hover states */
+.hover\:bg-primary-medium:hover {
+  background-color: var(--primary-medium);
+}
+
+.hover\:bg-primary-dark:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Links de navegação */
+.nav-link {
+  @apply text-gray-700 dark:text-gray-300 hover:text-primary-dark dark:hover:text-primary-light transition-colors duration-300 font-medium;
+}
+
+/* Cards de áreas de atuação */
+.area-card {
+  @apply bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl;
+}
+
+.area-card img {
+  @apply w-full h-48 object-cover;
+}
+
+.area-card-content {
+  @apply p-6;
+}
+
+.area-card h3 {
+  @apply text-xl font-bold mb-4 text-primary-dark dark:text-primary-light;
+}
+
+.area-card ul {
+  @apply space-y-2;
+}
+
+.area-card li {
+  @apply text-gray-600 dark:text-gray-300 text-sm flex items-center;
+}
+
+.area-card li::before {
+  content: "•";
+  @apply text-primary-medium mr-2 font-bold;
+}
+
+/* Carrossel */
+#carousel-container {
+  height: 400px;
+}
+
+#carousel-slides {
+  height: 100%;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-indicator {
+  @apply w-3 h-3 rounded-full bg-white bg-opacity-50 cursor-pointer transition-all duration-300;
+}
+
+.carousel-indicator.active {
+  @apply bg-white;
+}
+
+/* Responsividade para o carrossel */
+@media (max-width: 768px) {
+  #carousel-container {
+    height: 250px;
+  }
+}
+
+/* Animações customizadas */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Estilos para modo escuro */
+.dark body {
+  background-color: var(--bg-dark);
+  color: #e5e7eb;
+}
+
+.dark .bg-white {
+  background-color: #374151;
+}
+
+.dark .bg-gray-100 {
+  background-color: #4b5563;
+}
+
+.dark .bg-gray-200 {
+  background-color: #6b7280;
+}
+
+.dark .text-gray-600 {
+  color: #d1d5db;
+}
+
+.dark .text-gray-700 {
+  color: #e5e7eb;
+}
+
+.dark .text-gray-800 {
+  color: #f3f4f6;
+}
+
+.dark .border-gray-200 {
+  border-color: #4b5563;
+}
+
+.dark .border-gray-300 {
+  border-color: #6b7280;
+}
+
+/* Transições suaves para modo escuro */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Melhorias de acessibilidade */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus states para acessibilidade */
+button:focus,
+a:focus {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+}
+
+/* Melhorias para dispositivos móveis */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .hero-section {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Otimizações de performance */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.lazy-load {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazy-load.loaded {
+  opacity: 1;
+}
