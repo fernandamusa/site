@@ -280,3 +280,23 @@ header {
 .dark header {
   background-color: #111827; /* Fundo cinza-escuro no modo dark (equivalente a gray-900) */
 }
+
+/* Define o fundo do menu mobile para um cinza bem claro no modo light */
+.menu-mobile-bg {
+  background-color: #f9fafb; /* Equivalente a bg-gray-50 */
+}
+
+/* Define o fundo do menu mobile para um cinza escuro no modo dark */
+.dark .menu-mobile-bg {
+  background-color: #1f2937; /* Equivalente a dark:bg-gray-800 */
+}
+
+/* Força a cor do texto para um tom escuro no modo claro */
+#sobre p, #clinica p, #localizacao p {
+    color: #111827; /* Preto (equivalente a text-gray-900) */
+}
+
+/* Garante que o texto fique claro no modo escuro */
+.dark #sobre p, .dark #clinica p, .dark #localizacao p {
+    color: #d1d5db; /* Cinza claro (equivalente a dark:text-gray-300) */
+}
