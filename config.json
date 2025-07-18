@@ -24,6 +24,7 @@
     "rqe": "RQE 32.550",
     "foto": "images/dra fernanda.jpeg"
   },
+  
   "sobre": {
     "curriculo": [
       "Meu nome é Fernanda Musa Aguiar, sou Médica Dermatologista formada pela Universidade Federal de Ciências da Saúde de Porto Alegre (UFCSPA) em 2011. Ao me graduar na faculdade, senti a necessidade de me aprimorar e ganhar mais conhecimento e prática na Medicina para poder melhor auxiliar meus pacientes, compreender melhor as doenças e ter segurança e prontidão para atender eventuais urgências. Ingressei então em 2012 na Residência em Clínica Médica no Hospital Nossa Senhora da Conceição. Foram dois anos incríveis, de muito crescimento profissional e pessoal.",
@@ -31,74 +32,38 @@
       "Atualmente atuo nos meus consultórios particulares, atendendo crianças, adultos e idosos, nas áreas da dermatologia clínica, estética e cirúrgica."
     ]
   },
+  
   "areasAtuacao": [
     {
       "titulo": "Dermatologia Estética",
       "imagem": "images/dermatologia estetica.jpg",
       "descricao": "Tratamentos estéticos avançados para rejuvenescimento e melhoria da aparência da pele.",
-      "servicos": [
-        "Tratamento de Rugas",
-        "Ultrassom Microfocado",
-        "Bioestimulador de Colágeno",
-        "Fios de PDO",
-        "Preenchimento com Ácido Hialurônico",
-        "Luz Intensa Pulsada e Laser: manchas, depilação, rejuvenescimento, vasos, estrias",
-        "Microagulhamento",
-        "Peeling"
-      ]
+      "servicos": [ "Tratamento de Rugas", "Ultrassom Microfocado", "Bioestimulador de Colágeno", "Fios de PDO", "Preenchimento com Ácido Hialurônico", "Luz Intensa Pulsada e Laser: manchas, depilação, rejuvenescimento, vasos, estrias", "Microagulhamento", "Peeling" ],
+      "icon_svg": "<path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 3v4M3 5h4M6 17v4m-2-2h4m5-12v4m-2-2h4m5 4h-4m2 2v4m-5-4h4m-2 2v4M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5z' />"
     },
     {
       "titulo": "Dermatologia Clínica",
       "imagem": "images/dermatologia clinica.jpg",
-      "descricao": "Diagnóstico e tratamento de doenças de pele para todas as idades.",
-      "servicos": [
-        "Atendimento de recém-nascidos a idosos",
-        "Doenças de pele em geral:",
-        "Câncer de pele",
-        "Acne",
-        "Rosácea",
-        "Melasma e manchas da pele em geral",
-        "Herpes simples e Herpes Zoster",
-        "Verrugas",
-        "Dermatite Atópica",
-        "Psoríase",
-        "Dermatite Seborreica",
-        "Alopecias e queda de cabelo"
-      ]
+      "descricao": "Diagnóstico e tratamento de doenças de pele, cabelos e unhas para todas as idades.",
+      "servicos": [ "Atendimento de recém-nascidos a idosos", "Doenças de pele em geral:", "Câncer de pele", "Acne", "Rosácea", "Melasma e manchas da pele em geral", "Herpes simples e Herpes Zoster", "Verrugas", "Dermatite Atópica", "Psoríase", "Dermatite Seborreica", "Alopecias e queda de cabelo" ],
+      "icon_svg": "<path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' />"
     },
     {
       "titulo": "Doenças de Unha",
       "imagem": "images/doencas de unha.jpg",
-      "descricao": "Especialização em diagnóstico e tratamento de patologias ungueais.",
-      "servicos": [
-        "Micoses",
-        "Unhas encravadas",
-        "Tumores ungueais benignos e malignos",
-        "Biópsia de Unha"
-      ]
+      "descricao": "Especialização em diagnóstico e tratamento de patologias ungueais, como micoses e tumores.",
+      "servicos": [ "Micoses", "Unhas encravadas", "Tumores ungueais benignos e malignos", "Biópsia de Unha" ],
+      "icon_svg": "<path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M20 12a8 8 0 11-16 0 8 8 0 0116 0zm-8-4a4 4 0 100 8 4 4 0 000-8z' />"
     },
     {
       "titulo": "Dermatologia Cirúrgica",
       "imagem": "images/cirurgia.jpg",
-      "descricao": "Procedimentos cirúrgicos dermatológicos com técnicas modernas e seguras.",
-      "servicos": [
-        "Biópsia de pele",
-        "Remoção de tumor de pele benigno e maligno",
-        "Remoção de nevos",
-        "Remoção de cistos sebáceos",
-        "Crioterapia",
-        "Eletrocauterização"
-      ]
+      "descricao": "Procedimentos cirúrgicos dermatológicos para remoção de lesões com técnicas seguras.",
+      "servicos": [ "Biópsia de pele", "Remoção de tumor de pele benigno e maligno", "Remoção de nevos", "Remoção de cistos sebáceos", "Crioterapia", "Eletrocauterização" ],
+      "icon_svg": "<path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z' />"
     }
-  ],
-  "clinica": {
-    "nome": "Dra. Fernanda Musa",
-    "descricao": [
-      "A dermatologia é a especialidade médica que se dedica ao diagnóstico e tratamento clínico e cirúrgico das enfermidades que acometem a pele, as mucosas, e aos anexos cutâneos: cabelos, pelos e unhas. O profissional dermatologista está apto a diagnosticar e tratar todas as doenças que afetam a pele.",
-      "A MD Dermatologia Integrada, clínica da Dra. Fernanda Musa e seus sócios, foi criada em outubro de 2012 e surgiu da necessidade do hospital Mãe de Deus de oferecer um atendimento qualificado para pacientes dermatológicos. Teve início como o Serviço de Dermatologia que funcionava dentro do próprio Hospital. Fomos pioneiros como serviço do Sistema de Saúde Mãe de Deus a funcionar fora do hospital.",
-      "Fizemos a mudança da nossa sede em fevereiro de 2024. Temos uma infra-estrutura com três consultórios para atendimentos de consultas eletivas. Nossa equipe possui dermatologistas focados em subespecialidades e uma cirurgiã especializada em cirurgia dermatológica. Contamos ainda com uma técnica de enfermagem, uma auxiliar de limpeza e duas secretárias que complementam a equipe, desta forma oferecemos um atendimento diferenciado que abrange todas as necessidades do paciente.",
-      "Em outubro de 2025 completamos 13 anos de existência com mais de 300.000 atendimentos prestados, agregando valor e confiança aos nossos pacientes."
-    ],
+  ]
+  
     "fotos": [
       "images/clinica-1.jpg",
       "images/clinica-2.jpg",
@@ -109,6 +74,7 @@
     ],
     "estacionamento": "A clínica possui estacionamento aberto ao público, coberto e pago, com acesso pela Rua Barbedo."
   },
+
   "horarios": {
     "segunda": "8h às 18h",
     "terca": "8h às 18h",
@@ -118,10 +84,12 @@
     "sabado": "8h às 12h",
     "domingo": "Fechado"
   },
+
   "redes": {
     "instagram": "@dra.fernandamusa",
     "facebook": "MD Dermatologia Integrada"
   },
+
   "seo": {
     "keywords": [
       "dermatologista porto alegre",
