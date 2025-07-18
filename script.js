@@ -143,29 +143,49 @@ function displayConfigError() {
 function initThemeToggle() {
     const themeToggle = document.getElementById('theme-toggle');
     const html = document.documentElement;
-    
-    if (!themeToggle) {
-        console.warn('Botão de toggle do tema não encontrado');
+    const sunIcon = document.getElementById('theme-icon-sun');
+    const moonIcon = document.getElementById('theme-icon-moon');
+
+    if (!themeToggle || !sunIcon || !moonIcon) {
+        console.warn('Elementos do toggle de tema não encontrados');
         return;
     }
-    
-    // Verificar preferência salva ou preferência do sistema
+
+    // Função para atualizar os ícones com base na classe .dark
+    function updateIcons() {
+        if (html.classList.contains('dark')) {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+        } else {
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
+        }
+    }
+
+    // Verificar preferência salva ou do sistema na carga inicial
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
         html.classList.add('dark');
     }
-    
+
+    // Define o ícone correto na carga da página
+    updateIcons();
+
+    // Adiciona o evento de clique para alternar o tema e os ícones
     themeToggle.addEventListener('click', () => {
         html.classList.toggle('dark');
-        
+
         // Salvar preferência
         if (html.classList.contains('dark')) {
             localStorage.setItem('theme', 'dark');
         } else {
             localStorage.setItem('theme', 'light');
         }
+
+        // Atualiza os ícones após o clique
+        updateIcons();
     });
 }
 
