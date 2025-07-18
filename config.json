@@ -63,6 +63,15 @@
       "icon_svg": "<path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z' />"
     }
   ],
+
+    "clinica": {
+    "nome": "MD Dermatologia Integrada",
+    "descricao": [
+      "A dermatologia é a especialidade médica que se dedica ao diagnóstico e tratamento clínico e cirúrgico das enfermidades que acometem a pele, as mucosas, e aos anexos cutâneos: cabelos, pelos e unhas. O profissional dermatologista está apto a diagnosticar e tratar todas as doenças que afetam a pele.",
+      "A MD Dermatologia Integrada, clínica da Dra. Fernanda Musa e seus sócios, foi criada em outubro de 2012 e surgiu da necessidade do hospital Mãe de Deus de oferecer um atendimento qualificado para pacientes dermatológicos. Teve início como o Serviço de Dermatologia que funcionava dentro do próprio Hospital. Fomos pioneiros como serviço do Sistema de Saúde Mãe de Deus a funcionar fora do hospital.",
+      "Fizemos a mudança da nossa sede em fevereiro de 2024. Temos uma infra-estrutura com três consultórios para atendimentos de consultas eletivas. Nossa equipe possui dermatologistas focados em subespecialidades e uma cirurgiã especializada em cirurgia dermatológica. Contamos ainda com uma técnica de enfermagem, uma auxiliar de limpeza e duas secretárias que complementam a equipe, desta forma oferecemos um atendimento diferenciado que abrange todas as necessidades do paciente.",
+      "Em outubro de 2025 completamos 13 anos de existência com mais de 300.000 atendimentos prestados, agregando valor e confiança aos nossos pacientes."
+    ],
   
     "fotos": [
       "images/clinica-1.jpg",
