@@ -313,3 +313,43 @@ header {
 .dark #instagram {
   background-color: #111827 !important; /* Fundo CINZA ESCURO no modo dark */
 }
+
+/* Estilos para os novos cards de Área de Atuação */
+.atuacao-card-novo {
+  background-color: #f0aa6c; /* Laranja claro para o modo light */
+  color: #1f2937; /* Texto preto/cinza-escuro */
+  border-radius: 1.5rem; /* rounded-3xl */
+  padding: 2rem; /* p-8 */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.atuacao-card-novo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.dark .atuacao-card-novo {
+  background-color: #4a2c0f; /* Um tom de marrom/laranja escuro para o modo dark */
+  color: #f3f4f6; /* Texto cinza claro */
+}
+
+.atuacao-card-novo .icon-circle {
+  width: 4rem; /* w-16 */
+  height: 4rem; /* h-16 */
+  border-radius: 9999px; /* rounded-full */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem; /* mr-6 */
+  background-color: rgba(0, 0, 0, 0.1); /* Um fundo semi-transparente para o círculo do ícone */
+}
+
+.dark .atuacao-card-novo .icon-circle {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.atuacao-card-novo .icon-circle svg {
+  width: 2rem; /* w-8 */
+  height: 2rem; /* h-8 */
+}
