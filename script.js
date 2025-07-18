@@ -78,26 +78,32 @@ function loadAreasAtuacao(areas) {
 // Criar card de área de atuação
 function createAreaCard(area, index) {
     const card = document.createElement('div');
-    card.className = 'area-card';
+    // Adiciona a nova classe de estilo e as animações do AOS
+    card.className = 'atuacao-card-novo';
     card.setAttribute('data-aos', 'fade-up');
     card.setAttribute('data-aos-delay', (index * 100).toString());
-    
-    // Validar se a área tem as propriedades necessárias
-    if (!area.titulo || !area.imagem || !area.servicos) {
+
+    // Verifica se a área tem os dados necessários (título, descrição, e o novo icon_svg)
+    if (!area.titulo || !area.descricao || !area.icon_svg) {
         console.warn('Área de atuação com dados incompletos:', area);
         return card;
     }
-    
+
+    // Monta o novo HTML interno do card, baseado no seu exemplo
     card.innerHTML = `
-        <img src="${area.imagem}" alt="${area.titulo}" loading="lazy" onerror="this.src='images/placeholder.jpg'">
-        <div class="area-card-content">
-            <h3>${area.titulo}</h3>
-            <ul>
-                ${area.servicos.map(servico => `<li>${servico}</li>`).join('')}
-            </ul>
+        <div class="flex items-center mb-6">
+            <div class="icon-circle">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    ${area.icon_svg}
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold">${area.titulo}</h3>
         </div>
+        <p class="leading-relaxed">
+            ${area.descricao}
+        </p>
     `;
-    
+
     return card;
 }
 
